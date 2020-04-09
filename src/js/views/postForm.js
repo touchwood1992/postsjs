@@ -21,8 +21,9 @@ export const resetinputVal = () => {
   postTitle.value = "";
   postContent.value = "";
   postSubmitBtn.textContent = "Add Post";
-  if (document.querySelector(`.${cancelUpdateBtnCls}`) !== null) {
-    document.querySelector(`.${cancelUpdateBtnCls}`).remove();
+  const elll = document.querySelector(`.${cancelUpdateBtnCls}`);
+  if (elll !== null) {
+    elll.parentNode.removeChild(elll);
   }
 };
 
